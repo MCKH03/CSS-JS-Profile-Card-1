@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Lato";
+    font-weight: 400;
+    src: local("Lato Regular"),
+      url("../assets/fonts/Lato-Regular.woff2") format("woff2"),
+      url("../assets/fonts/Lato-Regular.woff") format("woff");
+  }
+
+  .card.inactive {
+    @apply scale-0;
+  }
+
+  .btn.inactive {
+    @apply scale-0;
+  }
+
+  @media only screen and (max-width: 25em) {
+    html {
+      @apply text-[10px];
+    }
+  }
+}
